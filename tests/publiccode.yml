@@ -1,0 +1,9 @@
+publiccodeYmlVersion: "0.4"
+name: "ACME Software Solutions"
+categories:
+  - business-intelligence
+description:
+  la:
+    longDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    shortDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+url: https://example.com
