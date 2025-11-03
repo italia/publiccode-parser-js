@@ -2,19 +2,19 @@ module github.com/italia/publiccode-parser-js/src/wasm
 
 go 1.24.3
 
-require github.com/italia/publiccode-parser-go/v4 v4.1.1
+require github.com/italia/publiccode-parser-go/v5 v5.2.1
 
 require (
 	github.com/Jeffail/gabs v1.4.0 // indirect
 	github.com/alranel/go-vcsurl/v2 v2.0.2 // indirect
 	github.com/dyatlov/go-oembed v0.0.0-20191103150536-a57c85b3b37c // indirect
 	github.com/gabriel-vasile/mimetype v1.4.3 // indirect
+	github.com/github/go-spdx/v2 v2.3.3 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.18.0 // indirect
 	github.com/italia/httpclient-lib-go v0.0.2 // indirect
 	github.com/kr/pretty v0.3.0 // indirect
-	github.com/kyoh86/go-spdx v0.0.5-0.20220518012447-4d195d3a5da1 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/rogpeppe/go-internal v1.8.0 // indirect
