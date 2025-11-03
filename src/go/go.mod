@@ -2,7 +2,7 @@ module github.com/italia/publiccode-parser-js/src/wasm
 
 go 1.24.3
 
-require github.com/italia/publiccode-parser-go/v4 v4.1.1
+require github.com/italia/publiccode-parser-go/v4 v4.3.7
 
 require (
 	github.com/Jeffail/gabs v1.4.0 // indirect
