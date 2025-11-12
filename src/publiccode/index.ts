@@ -1,8 +1,8 @@
-import categories from "./categories.ts";
-import developmentStatus from "./developmentStatus.ts";
-import maintenanceTypes from "./maintenanceTypes.ts";
-import scopes from "./scopes.ts";
-import softwareTypes from "./softwareTypes.ts";
+import type categories from "./categories.ts";
+import type developmentStatus from "./developmentStatus.ts";
+import type maintenanceTypes from "./maintenanceTypes.ts";
+import type scopes from "./scopes.ts";
+import type softwareTypes from "./softwareTypes.ts";
 
 export const LATEST_VERSION = "0.4.0";
 

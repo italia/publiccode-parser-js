@@ -1,4 +1,4 @@
-import { assertEquals } from "jsr:@std/assert";
+import { assertEquals } from "@std/assert";
 
 import "./wasm_exec.js";
 import { validator } from "../src/validator.ts";

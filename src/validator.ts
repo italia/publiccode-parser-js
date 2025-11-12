@@ -1,4 +1,4 @@
-import PublicCode from "./publiccode/index.ts";
+import type PublicCode from "./publiccode/index.ts";
 
 type Err = {
   column: number;
