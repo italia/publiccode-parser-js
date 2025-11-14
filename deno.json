@@ -3,8 +3,12 @@
   "description": "publiccode.yml parser and validator library",
   "version": "0.1.0",
   "exports": "./mod.ts",
+  "compilerOptions": {
+    "types": ["@types/golang-wasm-exec"]
+  },
   "imports": {
-    "@std/assert": "jsr:@std/assert@^1.0.13"
+    "@std/assert": "jsr:@std/assert@^1.0.13",
+    "@types/golang-wasm-exec": "npm:@types/golang-wasm-exec@^1.15.2"
   },
   "tasks": {
     "build": "deno run --allow-run build.ts",

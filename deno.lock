@@ -1,9 +1,10 @@
 {
-  "version": "4",
+  "version": "5",
   "specifiers": {
     "jsr:@std/assert@*": "1.0.13",
     "jsr:@std/assert@^1.0.13": "1.0.13",
-    "jsr:@std/internal@^1.0.6": "1.0.7"
+    "jsr:@std/internal@^1.0.6": "1.0.7",
+    "npm:@types/golang-wasm-exec@^1.15.2": "1.15.2"
   },
   "jsr": {
     "@std/assert@1.0.13": {
@@ -16,9 +17,15 @@
       "integrity": "39eeb5265190a7bc5d5591c9ff019490bd1f2c3907c044a11b0d545796158a0f"
     }
   },
+  "npm": {
+    "@types/golang-wasm-exec@1.15.2": {
+      "integrity": "sha512-NA77toY4yOiiV5foDVT/rfxmtoox7ASHqGs4Eek8xTMcKWwAhZLOD3SYfLQKq4P2jtOLQQkeISq3zSuQ1Y+apg=="
+    }
+  },
   "workspace": {
     "dependencies": [
-      "jsr:@std/assert@^1.0.13"
+      "jsr:@std/assert@^1.0.13",
+      "npm:@types/golang-wasm-exec@^1.15.2"
     ]
   }
 }
