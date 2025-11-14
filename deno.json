@@ -1,5 +1,5 @@
 {
-  "name": "@developers-italia/publiccode-parser-js",
+  "name": "@developers-italia/publiccode-parser",
   "description": "publiccode.yml parser and validator library",
   "version": "0.1.0",
   "exports": "./mod.ts",
