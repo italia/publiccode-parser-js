@@ -21,6 +21,10 @@
             pkgs.go
             pkgs.gopls
           ];
+
+          env = {
+            WASM_EXEC_JS = "${pkgs.go}/share/go/lib/wasm/wasm_exec.js";
+          };
         };
         formatter = pkgs.alejandra;
       }

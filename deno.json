@@ -11,7 +11,7 @@
     "@types/golang-wasm-exec": "npm:@types/golang-wasm-exec@^1.15.2"
   },
   "tasks": {
-    "build": "deno run --allow-run build.ts",
+    "build": "deno run --allow-env --allow-read --allow-run --allow-write build.ts",
     "test": "deno test --allow-read --no-check"
   }
 }
