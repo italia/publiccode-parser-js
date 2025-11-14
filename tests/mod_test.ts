@@ -1,12 +1,8 @@
 import { assertEquals } from "@std/assert";
 
-import "./wasm_exec.js";
-import { validator } from "../src/validator.ts";
+import { initializeWasm, validator } from "../src/validator.ts";
 
-const go = new Go();
-const mainWasm = await Deno.readFile("src/main.wasm");
-const { instance } = await WebAssembly.instantiate(mainWasm, go.importObject);
-go.run(instance);
+await initializeWasm();
 
 Deno.test("Simple test", async () => {
   const path = new URL("./publiccode.yml", import.meta.url);

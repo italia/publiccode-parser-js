@@ -1,4 +1,5 @@
 import type PublicCode from "./publiccode/index.ts";
+import "./wasm_exec.js";
 
 type Err = {
   column: number;
@@ -74,3 +75,10 @@ export const validator = async (
     version,
   };
 };
+
+export async function initializeWasm() {
+  const go = new Go();
+  const mainWasm = await Deno.readFile("src/main.wasm");
+  const { instance } = await WebAssembly.instantiate(mainWasm, go.importObject);
+  go.run(instance);
+}
