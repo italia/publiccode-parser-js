@@ -12,6 +12,6 @@
   },
   "tasks": {
     "build": "deno run --allow-env --allow-read --allow-run --allow-write build.ts",
-    "test": "deno test --allow-read --no-check"
+    "test": "deno test --allow-read"
   }
 }
