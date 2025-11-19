@@ -5,8 +5,7 @@ import { initializeWasm, validator } from "../src/validator.ts";
 await initializeWasm();
 
 Deno.test("Simple test", async () => {
-  const path = new URL("./publiccode.yml", import.meta.url);
-  const publicCodeYaml = await Deno.readTextFile(path);
+  const publicCodeYaml = await Deno.readTextFile("tests/publiccode.yml");
 
   const res = await validator({ publiccode: publicCodeYaml });
 

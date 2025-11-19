@@ -52,7 +52,7 @@ jobs:
           nix_version: 2.31.2
       - uses: nicknovitski/nix-develop@9be7cfb4b10451d3390a75dc18ad0465bed4932a # v1
       - run: deno task build
-      - run: deno test --allow-read
+      - run: deno test -P
   typecheck:
     name: Check TypeScript
     runs-on: ubuntu-24.04
