@@ -78,7 +78,9 @@ export const validator = async (
 
 export async function initializeWasm() {
   const go = new Go();
-  const mainWasm = await Deno.readFile("src/main.wasm");
+  const path = new URL("main.wasm", import.meta.url);
+  const res = await fetch(path);
+  const mainWasm = await res.arrayBuffer();
   const { instance } = await WebAssembly.instantiate(mainWasm, go.importObject);
   go.run(instance);
 }
