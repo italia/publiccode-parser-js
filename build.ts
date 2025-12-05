@@ -22,3 +22,4 @@ if (!wasmExecJs) {
 }
 
 await Deno.copyFile(wasmExecJs, "src/wasm_exec.js");
+await Deno.chmod("src/wasm_exec.js", 0o644);
